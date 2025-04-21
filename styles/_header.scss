@@ -125,13 +125,15 @@ header {
 
 .main-opts {
   display: flex;
-  padding: $spacing-16 $spacing-16 $spacing-16 0;
+  padding: 0 $spacing-16 0 0;
   gap: $spacing-8;
   align-items: center;
   background-color: $red;
   border-radius: $border-large;
 
   li {
+    height: 100%;
+
     a,
     button {
       width: 100%;
@@ -142,10 +144,11 @@ header {
 
     .quipper {
       margin: 0 $spacing-4 0 0;
+      @include iconHover();
+
       img {
         width: $spacing-32;
         height: $spacing-32;
-        @include iconHover();
       }
     }
 
@@ -205,7 +208,7 @@ header {
   }
 
   @include tablet() {
-    padding: $spacing-16;
+    padding: 0 $spacing-16;
   }
 }
 

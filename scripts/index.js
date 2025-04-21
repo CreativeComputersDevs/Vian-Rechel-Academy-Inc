@@ -64,8 +64,6 @@ testBtns.forEach((test, i) => {
     test.addEventListener("click", () => {
         studentposition = i;
         updateTestimonial(studentposition);
-        testBtns.forEach(btn => btn.classList.remove("show"));
-        test.classList.add("show");
     });
 });
 

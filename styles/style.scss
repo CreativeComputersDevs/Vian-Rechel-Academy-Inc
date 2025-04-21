@@ -43,6 +43,10 @@ body {
   &.behind {
     // * When the navigation is displayed
     z-index: $z-index-top;
+    display: none;
+    @include tablet() {
+      display: block;
+    }
   }
 }
 

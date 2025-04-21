@@ -33,17 +33,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
         <!-- ! DO NOT REMOVE THIS STYLE -->
-        <link rel="preload" href="/styles/style.css" as="style" onload="this.onload=null; this.rel='stylesheet'">
-        <noscript>
-            <link rel="stylesheet" href="/styles/style.css">
-        </noscript>
+        <link rel="preload" href="/styles/style.css" as="style">
+        <!-- ! DO NOT REMOVE THIS SCRIPT -->
+        <link rel="preload" href="/scripts/script.js" as="script">
+        <link rel="stylesheet" href="/styles/style.css">
+        <script src="/scripts/script.js" defer></script>
         <!-- * Change the stylesheet for the corresponding page -->
         <link rel="stylesheet" href="/styles/index.css">
-        <link rel="preload" href="/scripts/script.js" as="script">
         <!-- * Change the script file for the corresponding page (if there is) -->
         <script src="/scripts/index.js" defer></script>
-        <!-- ! DO NOT REMOVE THIS SCRIPT -->
-        <script src="/scripts/script.js" defer></script>
     </head>
 
     <body>
@@ -184,7 +182,7 @@
                         </a>
                     </li>
                     <li>
-                        <button class="menu-btn" aria-label="Toggle Menu">
+                        <button class="menu-btn">
                             <div class="menu-txt">
                                 <span>Menu</span>
                                 <span>Close</span>
@@ -260,7 +258,7 @@
                     </p>
                     <!-- TODO: Update About Link -->
                     <a href="/en/about.html" class="btn-style yellow">
-                        <span>Learn More</span>
+                        <span>Get To Know Us</span>
                         <span class="btn-box-ctr">
                             <svg class="btn-box" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                                 <rect width="100" height="100">
@@ -345,7 +343,7 @@
                     </div>
                     <!-- TODO: Update Courses Link -->
                     <a href="/en/courses.html" class="btn-style red">
-                        <span>Learn More</span>
+                        <span>Explore All The Courses</span>
                         <span class="btn-box-ctr">
                             <svg class="btn-box" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
                                 <rect width="100" height="100">
@@ -513,11 +511,13 @@
         <!-- ! NEED UPDATE FOOTER -->
         <footer>
             <ul class="affiliations">
-                <li><img src="assets/images/Bagong Pilipinas.webp" alt="Bagong Pilipinas"></li>
-                <li><img src="assets/images/DepED.webp" alt="DepED (Deparment of Education)"></li>
-                <li><img src="assets/images/School Division.webp" alt="School Division Office of San Pedro City">
+                <li><img src="assets/images/Bagong Pilipinas.webp" alt="Bagong Pilipinas" loading="lazy"></li>
+                <li><img src="assets/images/DepED.webp" alt="DepED (Deparment of Education)" loading="lazy"></li>
+                <li><img src="assets/images/School Division.webp" alt="School Division Office of San Pedro City"
+                        loading="lazy">
                 </li>
-                <li><img src="assets/images/Matatag.webp" alt="Matatag Bansang Makabata Batang Makabansa"></li>
+                <li><img src="assets/images/Matatag.webp" alt="Matatag Bansang Makabata Batang Makabansa"
+                        loading="lazy"></li>
             </ul>
             <div class="width-wrap">
                 <svg class="foot-svg" xmlns="http://www.w3.org/2000/svg" width="354" height="354" viewBox="0 0 354 354"

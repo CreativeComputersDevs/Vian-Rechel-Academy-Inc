@@ -1,5 +1,5 @@
-const body = document.body;
-const overlay = document.querySelector(".overlay");
+let body = document.body;
+let overlay = document.querySelector(".overlay");
 const header = document.querySelector("header .width-wrap");
 const navigation = document.querySelector(".head-nav");
 const menuBtn = document.querySelector(".menu-btn");
@@ -46,14 +46,19 @@ menuBtn.addEventListener("click", () => {
     setTimeout(() => clickable = false, overlayTime);
 });
 
-// ! Toggle Sub Menu Dropdown
-subMenuBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-        const isOpen = btn.classList.contains("show");
-        subMenuBtns.forEach(b => b.classList.remove("show"));
-        if (!isOpen) btn.classList.add("show");
+// ! Toggle Dropdown
+function toggleDropdowns(dropdown) {
+    dropdown.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const isOpen = btn.classList.contains("show");
+            dropdown.forEach(b => b.classList.remove("show"));
+            if (!isOpen) btn.classList.add("show");
+        });
     });
-});
+}
+
+// ! Toggle Sub Menu Dropdown
+toggleDropdowns(subMenuBtns);
 
 // ! Overlay Click: Close Navigation
 overlay.addEventListener("click", () => {
