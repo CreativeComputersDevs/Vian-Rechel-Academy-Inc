@@ -11,8 +11,9 @@ html {
 }
 
 body {
-  background-color: #1a1a1a;
+  background-color: #fbf8f2;
 }
+
 body.hide {
   overflow: hidden;
 }
