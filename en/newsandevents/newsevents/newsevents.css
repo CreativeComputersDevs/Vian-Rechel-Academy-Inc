@@ -98,7 +98,7 @@
 }
 
 .arrow {
-  font-size: 3rem;
+  font-size: 5rem;
   color: white;
   position: absolute;
   top: 50%;
@@ -106,7 +106,6 @@
   cursor: pointer;
   user-select: none;
   padding: 10px;
-  background-color: rgba(0,0,0,0.3);
   border-radius: 50%;
 }
 
