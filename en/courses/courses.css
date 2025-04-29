@@ -1,26 +1,17 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    background-color: #fff;
-    color: #333;
-  }
+
+
   
   .classroom-section {
-    padding: 20px;
+    padding: 50px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
     max-width: 1200px;
     margin: 0 auto;
   }
   
   .classroom-card {
-    background-color: #7b0c0c; /* Red background */
+    background-color: rgb(112, 0, 5); /* Red background */
     border-radius: 8px;
     overflow: hidden;
     color: #fff;
@@ -37,10 +28,12 @@
   
   .classroom-image {
     width: 100%;
-    height: auto;
-    border-radius: 8px; /* Rounded corners for the image */
+    height: 400px; /* Adjust height as needed */
+    object-fit: cover;
+    border-radius: 8px;
     display: block;
   }
+  
   
   .classroom-content {
     padding: 20px;
