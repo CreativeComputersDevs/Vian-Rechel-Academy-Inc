@@ -51,7 +51,6 @@
   }
   
   .faq-answer {
-    overflow: hidden;
     max-height: 0;
     font-size: 1rem;
     color: #ffffff;
@@ -59,8 +58,6 @@
   }
   
   .faq-answer.visible {
-    max-height: 200px;
-    padding: 40px 60px 75px 60px;
     border-bottom-right-radius: 25px;
   }
   
