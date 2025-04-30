@@ -58,7 +58,7 @@
   }
   
   .faq-answer.visible {
-    padding: 50px 100px 250px 50px;
+    margin: 50px 50px 100px 50px;
   }
   
   button.toggle {
@@ -75,10 +75,3 @@
   }
 
 
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .faq-answer.visible {
-      padding: 50px 100px 300px 50px;
-    }
-  }
-    
