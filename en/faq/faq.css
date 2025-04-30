@@ -61,7 +61,7 @@
   
   .faq-answer.visible {
     max-height: 200px;
-    padding: 40px 60px 40px 60px;
+    padding: 40px 60px 75px 60px;
     border-bottom-right-radius: 25px;
   }
   
