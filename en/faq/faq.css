@@ -2,7 +2,7 @@
   /* FAQ Container */
   .faq-container {
     max-width: 1250px;
-    margin: -100px auto 0; /* positions the thing to... yknow. */
+    margin: 0 auto ; /* positions the thing to... yknow. */
     padding: 20px;
     position: relative;
     z-index: 0;
@@ -28,7 +28,7 @@
     padding: 30px;
     cursor: pointer;
     background-color: #ffffff;
-    transition: font-size 0.3s ease, color 0.3s ease; 
+    transition: font-size 0.3s ease, color 0.3s ease;
   }
   
   .faq-text {
