@@ -58,7 +58,7 @@
   }
   
   .faq-answer.visible {
-    border-bottom-right-radius: 25px;
+    padding: 50px 100px 250px 50px;
   }
   
   button.toggle {
@@ -74,4 +74,11 @@
     transform: rotate(45deg);
   }
 
-  
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .faq-answer.visible {
+      padding: 50px 100px 300px 50px;
+    }
+  }
+    
