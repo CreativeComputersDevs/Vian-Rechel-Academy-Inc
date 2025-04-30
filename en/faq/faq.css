@@ -25,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px;
+    padding: 30px;
     cursor: pointer;
     background-color: #ffffff;
     transition: font-size 0.3s ease, color 0.3s ease; 
