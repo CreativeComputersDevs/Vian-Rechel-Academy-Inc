@@ -2,7 +2,7 @@
   /* FAQ Container */
   .faq-container {
     max-width: 1250px;
-    margin: -100px auto 0; /* positions the thing to... yknow. */
+    margin: 0 auto ; /* positions the thing to... yknow. */
     padding: 20px;
     position: relative;
     z-index: 0;
@@ -25,10 +25,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px;
+    padding: 30px;
     cursor: pointer;
     background-color: #ffffff;
-    transition: font-size 0.3s ease, color 0.3s ease; 
+    transition: font-size 0.3s ease, color 0.3s ease;
   }
   
   .faq-text {
@@ -51,18 +51,14 @@
   }
   
   .faq-answer {
-    overflow: hidden;
     max-height: 0;
-    padding: 0 15px;
     font-size: 1rem;
     color: #ffffff;
     transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
   }
   
   .faq-answer.visible {
-    max-height: 200px;
-    padding: 40px 60px 40px 60px;
-    border-bottom-right-radius: 25px;
+    margin: 50px 50px 100px 50px;
   }
   
   button.toggle {
@@ -78,4 +74,4 @@
     transform: rotate(45deg);
   }
 
-  
+
