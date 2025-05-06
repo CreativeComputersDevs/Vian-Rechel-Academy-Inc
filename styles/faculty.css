@@ -51,14 +51,13 @@
 }
 @media (min-width: 768px) {
   .hero .width-wrap h1 {
-    font-size: 3.5rem;
-    line-height: 1.2;
+    font-size: 6rem;
+    line-height: 1;
   }
 }
 @media (min-width: 1024px) {
   .hero .width-wrap h1 {
-    font-size: 4.5rem;
-    line-height: 1.1;
+    font-size: 8rem;
   }
 }
 .hero .width-wrap h1 span {

@@ -13,7 +13,6 @@ html {
 body {
   background-color: #fbf8f2;
 }
-
 body.hide {
   overflow: hidden;
 }

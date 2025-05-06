@@ -38,11 +38,12 @@
       font-weight: 900;
 
       @include tablet() {
-        @include fontSize(h2);
+        font-size: 6rem;
+        line-height: 1;
       }
 
       @include desktop() {
-        @include fontSize(h1);
+        font-size: 8rem;
       }
 
       span {
