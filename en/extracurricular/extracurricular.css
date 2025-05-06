@@ -85,3 +85,24 @@
     padding-left: 20px;
   }
 }
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-img {
+z-index: 0;
+height: 125%;
+position: absolute;
+-o-object-fit: cover;
+   object-fit: cover;
+filter: brightness(0.5);
+pointer-events: none;
+}
+
+
+.width-wrap h1 {
+z-index: 10;
+}
+
