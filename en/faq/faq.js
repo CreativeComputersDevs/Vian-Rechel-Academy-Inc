@@ -9,10 +9,10 @@ document.querySelectorAll('.faq-question').forEach((faqElement) => {
     const button = faqElement.querySelector('.toggle');
   
     if (!answer.style.maxHeight || answer.style.maxHeight === '0px') {
-      answer.style.maxHeight = answer.scrollHeight + 'px';
-      answer.classList.add('visible');
-      number.style.fontSize = '4rem';
-      number.style.color = '#12533F';  
+      answer.style.maxHeight = answer.scrollHeight + '0px';
+      answer.classList.add('visible');  
+      number.style.fontSize = '4rem';   
+      number.style.color = '#12533F';   
       questionText.style.fontSize = '1.5rem'; 
       questionText.style.color = '#12533F';
       button.classList.add('active');
