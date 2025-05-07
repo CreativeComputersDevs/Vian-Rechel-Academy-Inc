@@ -1,77 +1,182 @@
-  
+.faq-title-container {
+  max-width: 1450px;
+  margin: 35px auto 0;
+  background-image: url('/en/faq/images/black.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  display: flex; 
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+.faq-title {
+  text-align: left;
+  padding: 150px 300px; 
+  width: 100%;
+}
+
+.faq-title h1 {
+  font-weight: bolder;
+  font-size: 4.5rem;
+  margin: 0;
+}
+
+.faq-title .highlight {
+  color: #F2C523;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 20px;
+}
+
+/* FAQ Container */
+.faq-container {
+  max-width: 1250px;
+  margin: -100px auto 0; 
+  padding: 20px;
+  position: relative;
+  z-index: 0;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  background-color: #12533F;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item:first-child {
+  border-top-left-radius: 25px;
+}
+
+.faq-question {
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: font-size 0.3s ease, color 0.3s ease; 
+}
+
+.faq-text {
+  font-size: 1rem; 
+  color: #333; 
+  transition: font-size 0.3s ease, color 0.3s ease; 
+}
+
+.faq-answer.visible .faq-text {
+  font-size: 2rem; 
+  color: #12533F; 
+  text-justify: auto;
+}
+
+.faq-number {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-right: 10px;
+  transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 15px;
+  font-size: 1rem;
+  color: #ffffff;
+  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+}
+
+.faq-answer.visible {
+  max-height: 1000px;
+  padding: 40px 60px;
+}
+
+
+button.toggle {
+  font-size: 3.25rem;
+  background: none;
+  border: none;
+  color: #4a4a4a;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+button.toggle.active {
+  transform: rotate(45deg);
+}
+
+/* Tablet Responsiveness... */
+@media (max-width: 769px) {
+  .faq-title-container {
+    margin: 0;
+    border-radius: 0; 
+    max-width: 100%; 
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .faq-title h1 {
+    font-size: 8vw;
+  }
+
+  .faq-title {
+    padding: 15vw 6vw;
+  }
+
   /* FAQ Container */
+.faq-container {
+  margin: -80px auto 0; /* positions the thing to... yknow. */
+}
+}
+
+/* Mobile Responsiveness (Large & Small)... */
+@media (max-width: 426px) {
+  .faq-title {
+    padding: 20vw 8vw;
+  }
+  
+  faq-title h1 {
+    font-size: 10vw;
+  }
+
   .faq-container {
-    max-width: 1250px;
-    margin: 0 auto ; /* positions the thing to... yknow. */
-    padding: 20px;
-    position: relative;
-    z-index: 0;
+    margin: -50px auto 0; 
   }
-  
-  .faq-item {
-    margin-bottom: 10px;
-    background-color: #12533F;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .faq-item:first-child {
-    border-top-left-radius: 25px;
-  }
-  
-  /* FAQ Question and Answer */
-  .faq-question {
-    font-weight: bolder;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
-    cursor: pointer;
-    background-color: #ffffff;
-    transition: font-size 0.3s ease, color 0.3s ease;
-  }
-  
+
   .faq-text {
     font-size: 1rem; 
-    color: #333; 
-    transition: font-size 0.3s ease, color 0.3s ease; 
   }
   
   .faq-answer.visible .faq-text {
-    font-size: 2rem; 
-    color: #12533F; 
+    font-size: 1rem; 
+    text-justify: auto;
   }
   
   .faq-number {
     font-size: 1rem;
-    font-weight: bold;
-    color: #4a4a4a;
     margin-right: 10px;
-    transition: font-size 0.3s ease, color 0.3s ease;
+  }
+
+  button.toggle {
+    font-size: 2rem;
   }
   
   .faq-answer {
-    max-height: 0;
-    font-size: 1rem;
-    color: #ffffff;
-    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+    font-size: 12px;
+    margin: 0;
   }
   
   .faq-answer.visible {
-    margin: 50px 50px 100px 50px;
+    max-height: 200px;
+    padding: 40px 20px;
   }
-  
-  button.toggle {
-    font-size: 3.25rem;
-    background: none;
-    border: none;
-    color: #4a4a4a;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  button.toggle.active {
-    transform: rotate(45deg);
-  }
+}
 
 
