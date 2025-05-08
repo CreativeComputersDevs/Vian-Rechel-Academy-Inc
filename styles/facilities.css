@@ -1,0 +1,160 @@
+.btn-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+  text-transform: lowercase;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  border-radius: 0.5rem;
+}
+.btn-style.yellow {
+  background-color: #f2c523;
+  color: #1a1a1a;
+  fill: #1a1a1a;
+}
+.btn-style.green {
+  background-color: #12533f;
+  color: #fbf8f2;
+  fill: #fbf8f2;
+}
+.btn-style.white {
+  background-color: #fbf8f2;
+  color: #1a1a1a;
+  fill: #1a1a1a;
+}
+.btn-style.red {
+  background-color: #700005;
+  color: #fbf8f2;
+  fill: #fbf8f2;
+}
+.btn-style:hover .btn-box-ctr .btn-box {
+  transform: rotateZ(180deg) scale(0.5);
+}
+.btn-style .btn-box-ctr {
+  width: 1rem;
+  height: 1rem;
+  display: grid;
+  place-items: center;
+}
+.btn-style .btn-box-ctr .btn-box {
+  width: inherit;
+  height: inherit;
+  border-radius: 0.125rem;
+  transition: transform 0.8s cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+
+.width-wrap {
+  margin: 0 auto;
+  max-width: 1720px;
+  padding: 2.5rem 1.5rem;
+}
+@media (min-width: 768px) {
+  .width-wrap {
+    padding: 5rem 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .width-wrap {
+    padding: 7.5rem 6rem;
+  }
+}
+
+.facilitiesheader {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+.facilitiesheader h1 {
+  font-weight: bolder;
+  padding-top: 430px;
+  text-align: center;
+  font-size: 8rem;
+  color: gold;
+}
+
+.schoolmap {
+  position: relative;
+  height: 100vh;
+  background-color: white;
+}
+.schoolmap img {
+  width: 1720px;
+  margin: 0 auto;
+}
+
+.facilitybuttons {
+  position: absolute;
+  bottom: 200px;
+  left: 600px;
+}
+.facilitybuttons button {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-decoration: none;
+  color: maroon;
+  background: gold;
+  padding: 5px 10px;
+  border-radius: 7.5px;
+  box-shadow: 0px 0px 15px black;
+}
+.facilitybuttons :hover {
+  background: red;
+  color: gold;
+  transition: 0.15s all;
+}
+
+.facilitydescriptions {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  max-width: 1720px;
+  margin: 50px auto;
+  border-radius: 25px;
+  background-color: maroon;
+}
+
+.closedesc {
+  margin: 20px;
+  background-color: gold;
+  font-size: 50px;
+  font-weight: bolder;
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+}
+
+.closedesc:hover {
+  background: gold;
+  color: maroon;
+  transition: 0.15s all;
+}
+
+.courtyarddesc {
+  margin: 50px auto;
+}
+.courtyarddesc img {
+  width: 1500px;
+  max-height: 750px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+
+.courtyardtext {
+  display: grid;
+}
+.courtyardtext h1 {
+  font-size: 64px;
+  margin: 20px 0;
+  color: white;
+}
+.courtyardtext p {
+  font-size: 16px;
+  color: white;
+}/*# sourceMappingURL=facilities.css.map */
