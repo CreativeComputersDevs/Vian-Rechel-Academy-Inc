@@ -93,7 +93,7 @@ $font-sizes: (
     justify-content: center;
     padding: $spacing-8 $spacing-16;
     gap: $spacing-8;
-    text-transform: lowercase;
+    text-transform: capitalize;
     font-weight: 700;
     @include fontSize(p);
     border-radius: $border-large;

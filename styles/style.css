@@ -191,6 +191,7 @@ header .width-wrap .logo {
   color: #fbf8f2;
   text-transform: uppercase;
   font-weight: 800;
+  line-height: 1;
 }
 header .width-wrap .logo:hover {
   transform: scale(0.9);

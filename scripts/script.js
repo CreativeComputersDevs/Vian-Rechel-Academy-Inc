@@ -12,6 +12,11 @@ let prevScroll = 0;
 window.addEventListener("scroll", () => {
     clearTimeout(scrollTimeout)
     scrollTimeout = setTimeout(() => {
+        if (navigation.classList.contains("show")) {
+            header.style.top = "0";
+            return;
+        }
+
         let currScroll = window.pageYOffset;
         if (currScroll > prevScroll && currScroll >= 50) {
             header.style.top = "-70%"

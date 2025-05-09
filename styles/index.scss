@@ -65,7 +65,7 @@
       min-height: 100vh;
       height: 100%;
       object-fit: cover;
-      filter: brightness(0.4);
+      filter: brightness(0.25);
       background-color: $black;
     }
 
@@ -135,6 +135,7 @@
       text-align: center;
       text-transform: uppercase;
       margin: 0 0 $spacing-16 0;
+      line-height: 1;
 
       @include tablet() {
         @include fontSize(h2);
@@ -227,9 +228,23 @@
           border-color: $dark-black;
         }
 
+        .card-icon {
+          width: 120px;
+          height: 120px;
+          position: absolute;
+          transform: scale(1.1);
+          @include desktop() {
+            width: $spacing-64;
+            height: $spacing-64;
+            position: static;
+            transform: none;
+          }
+        }
+
         .card-img {
           width: 120px;
           height: 120px;
+          position: relative;
 
           @include desktop() {
             opacity: 0;
@@ -267,9 +282,6 @@
             @include fontSize(h6);
             font-weight: 700;
             margin: $spacing-16 0 $spacing-24 0;
-            @include desktop() {
-              margin: 0 0 $spacing-24 0;
-            }
           }
         }
       }
@@ -379,11 +391,6 @@
           gap: $spacing-32;
         }
       }
-      .btn-style {
-        justify-self: right;
-        height: fit-content;
-        width: fit-content;
-      }
       @include desktop() {
         grid-column: 2;
         gap: $spacing-48;
@@ -395,7 +402,7 @@
     }
 
     @include desktop() {
-      grid-template-columns: 500px 1fr;
+      grid-template-columns: 600px 1fr;
       align-items: center;
     }
   }
@@ -500,16 +507,17 @@
         display: flex;
         gap: $spacing-16;
         align-items: center;
+
         .indi-img {
-          width: $spacing-64 * 1.2;
-          height: $spacing-64 * 1.2;
+          width: $spacing-64 * 1.5;
+          height: $spacing-64 * 1.5;
           @include tablet() {
-            width: $spacing-64 * 1.5;
-            height: $spacing-64 * 1.5;
-          }
-          @include desktop() {
             width: $spacing-64 * 2;
             height: $spacing-64 * 2;
+          }
+          @include desktop() {
+            width: $spacing-64 * 2.5;
+            height: $spacing-64 * 2.5;
           }
         }
 
@@ -597,9 +605,60 @@
           }
         }
       }
+    }
+  }
+}
 
+.apply {
+  background-color: $white;
+  .width-wrap {
+    color: $black;
+
+    img {
+      width: 100%;
+      margin: 0 0 $spacing-16 0;
+      @include tablet() {
+        margin: 0 0 $spacing-32 0;
+      }
+    }
+
+    .apply-desc {
+      h2 {
+        @include fontSize(h4);
+        text-align: center;
+        text-transform: uppercase;
+        text-wrap: balance;
+        margin: 0 0 $spacing-16 0;
+        line-height: 1;
+
+        @include tablet() {
+          @include fontSize(h2);
+        }
+
+        @include desktop() {
+          @include fontSize(h1);
+        }
+      }
+      p {
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 300;
+
+        @include tablet() {
+          @include fontSize(h6);
+        }
+
+        @include desktop() {
+          @include fontSize(h5);
+        }
+      }
+    }
+
+    .btn-style {
+      width: fit-content;
+      margin: $spacing-32 auto 0 auto;
       @include desktop() {
-        margin: $spacing-64 0 0 0;
+        margin: $spacing-64 auto 0 auto;
       }
     }
   }

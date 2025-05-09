@@ -4,7 +4,7 @@
   justify-content: center;
   padding: 0.5rem 1rem;
   gap: 0.5rem;
-  text-transform: lowercase;
+  text-transform: capitalize;
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.5;
@@ -126,7 +126,7 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  filter: brightness(0.4);
+  filter: brightness(0.25);
   background-color: #1a1a1a;
 }
 .hero .width-wrap .vid-ctr {
@@ -196,6 +196,7 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0 0 1rem 0;
+  line-height: 1;
 }
 @media (min-width: 768px) {
   .intro .width-wrap h2 {
@@ -301,9 +302,24 @@
 .courses .width-wrap .cards-ctr .info-card.black {
   border-color: #161616;
 }
+.courses .width-wrap .cards-ctr .info-card .card-icon {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  transform: scale(1.1);
+}
+@media (min-width: 1024px) {
+  .courses .width-wrap .cards-ctr .info-card .card-icon {
+    width: 4rem;
+    height: 4rem;
+    position: static;
+    transform: none;
+  }
+}
 .courses .width-wrap .cards-ctr .info-card .card-img {
   width: 120px;
   height: 120px;
+  position: relative;
 }
 @media (min-width: 1024px) {
   .courses .width-wrap .cards-ctr .info-card .card-img {
@@ -339,11 +355,6 @@
   line-height: 1.4;
   font-weight: 700;
   margin: 1rem 0 1.5rem 0;
-}
-@media (min-width: 1024px) {
-  .courses .width-wrap .cards-ctr .info-card .card-desc h3 {
-    margin: 0 0 1.5rem 0;
-  }
 }
 @media (min-width: 768px) {
   .courses .width-wrap .cards-ctr {
@@ -473,13 +484,6 @@
     gap: 2rem;
   }
 }
-.homeschool .width-wrap .hs-features .btn-style {
-  justify-self: right;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
 @media (min-width: 1024px) {
   .homeschool .width-wrap .hs-features {
     grid-column: 2;
@@ -493,7 +497,7 @@
 }
 @media (min-width: 1024px) {
   .homeschool .width-wrap {
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 600px 1fr;
     align-items: center;
   }
 }
@@ -603,19 +607,19 @@
   align-items: center;
 }
 .testimonials .width-wrap .indi-desc .indi-details .indi-img {
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 6rem;
+  height: 6rem;
 }
 @media (min-width: 768px) {
   .testimonials .width-wrap .indi-desc .indi-details .indi-img {
-    width: 6rem;
-    height: 6rem;
+    width: 8rem;
+    height: 8rem;
   }
 }
 @media (min-width: 1024px) {
   .testimonials .width-wrap .indi-desc .indi-details .indi-img {
-    width: 8rem;
-    height: 8rem;
+    width: 10rem;
+    height: 10rem;
   }
 }
 .testimonials .width-wrap .indi-desc .indi-details cite {
@@ -714,8 +718,67 @@
   width: 1rem;
   height: 1rem;
 }
+
+.apply {
+  background-color: #fbf8f2;
+}
+.apply .width-wrap {
+  color: #1a1a1a;
+}
+.apply .width-wrap img {
+  width: 100%;
+  margin: 0 0 1rem 0;
+}
+@media (min-width: 768px) {
+  .apply .width-wrap img {
+    margin: 0 0 2rem 0;
+  }
+}
+.apply .width-wrap .apply-desc h2 {
+  font-size: 2.5rem;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+  text-wrap: balance;
+  margin: 0 0 1rem 0;
+  line-height: 1;
+}
+@media (min-width: 768px) {
+  .apply .width-wrap .apply-desc h2 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+}
 @media (min-width: 1024px) {
-  .testimonials .width-wrap .slider-btns {
-    margin: 4rem 0 0 0;
+  .apply .width-wrap .apply-desc h2 {
+    font-size: 4.5rem;
+    line-height: 1.1;
+  }
+}
+.apply .width-wrap .apply-desc p {
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  .apply .width-wrap .apply-desc p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+}
+@media (min-width: 1024px) {
+  .apply .width-wrap .apply-desc p {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+}
+.apply .width-wrap .btn-style {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 2rem auto 0 auto;
+}
+@media (min-width: 1024px) {
+  .apply .width-wrap .btn-style {
+    margin: 4rem auto 0 auto;
   }
 }/*# sourceMappingURL=index.css.map */
