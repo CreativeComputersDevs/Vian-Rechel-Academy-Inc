@@ -120,6 +120,7 @@
 
  .hero-img {
   z-index: 0;
+    width: 100vw;
   height: 125%;
   position: absolute;
   -o-object-fit: cover;
