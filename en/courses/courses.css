@@ -201,10 +201,7 @@ button.toggle.active {
     padding: 15vw 6vw;
   }
 
-  /* FAQ Container */
-.faq-container {
-  margin: -80px auto 0; /* positions the thing to... yknow. */
-}
+
 }
 
 /* Mobile Responsiveness (Large & Small)... */
