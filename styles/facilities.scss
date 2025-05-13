@@ -12,7 +12,7 @@
     position: relative;
     background-color: black;
     height: 100vh;
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
 
     h1 {
@@ -24,13 +24,17 @@
     }
 }
 
+.facilities {
+    overflow-y: hidden;
+}
+
 .schoolmap {
     position: relative;
-    height: 100vh;
     background-color: white;
+    overflow-y: hidden;
 
     img {
-        width: 1720px;
+        min-width: 1720px;
         margin: 0 auto;
     }
 }
@@ -45,15 +49,14 @@
 
 .facility-btn {
     position: absolute;
-    @include fontSize(h5);
+    @include fontSize(h6);
     font-weight: bold;
     color: #700005;
     background: #f2c523;
-    padding: 5px 10px;
+    padding: 10px 15px;
     border-radius: 5px;
     box-shadow: 0 0 15px black;
     transition: 0.15s all;
-
     @include iconHover();
 }
 
@@ -65,53 +68,55 @@
 }
 
 .courtyard-btn {
-    top: 650px;
-    left: 600px;
-}
-
-.library-btn {
     top: 550px;
-    left: 900px;
-}
-
-.classroom-btn {
-    top: 350px;
-    left: 400px;
+    left: 500px;
 }
 
 .comlab-btn {
-    top: 600px;
+    top: 450px;
+    left: 300px;
+}
+
+.classroom-btn {
+    top: 200px;
     left: 350px;
 }
 
+.library-btn {
+    top: 475px;
+    left: 850px;
+}
+
 .basketball-btn {
-    top: 260px;
+    top: 150px;
     left: 700px;
 }
 
 .auditorium-btn {
-    top: 300px;
+    top: 200px;
     left: 1250px;
 }
 
 .scilab-btn {
-    top: 450px;
-    left: 1200px;
+    top: 350px;
+    left: 1150px;
 }
 
 .classes-btn {
-    top: 550px;
+    top: 450px;
     left: 1250px;
 }
 
 .facilitydescriptions {
     position: fixed;
     margin: 0 auto;
-    width: 1530px;
-    height: 800px;
-    top: 100px;
-    left: 50%;
-    transform: translate(-50%, 100%);
+    width: 87%;
+    max-width: 1720px;
+    max-height: 550px;
+    top: 120px;
+    left: -96px;
+    right: -96px;
+    transform: translate(0);
     opacity: 0;
     visibility: hidden;
     overflow-y: auto;
@@ -131,14 +136,13 @@
 }
 
 .facilitydescriptions.active {
-    transform: translate(-50%, 0);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
 
 .facilitydescriptions.closing {
-    transform: translate(-50%, 100%);
+    transform: translate(0, 100%);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -180,7 +184,7 @@
         margin: 0 auto;
         width: 100%;
         max-width: 1440px;
-        max-height: 600px;
+        max-height: 500px;
         object-fit: cover;
         border-radius: 25px;
     }
@@ -213,56 +217,15 @@
 
 @media (max-width: 1440px) {
 
-    // Desktop 
-    .facility-btn {
-        font-size: 32px;
-    }
-
-    .courtyard-btn {
-        top: 600px;
-        left: 400px;
-    }
-
-    .library-btn {
-        top: 500px;
-        left: 700px;
-    }
-
-    .comlab-btn {
-        top: 500px;
-        left: 200px;
-    }
-
-    .classroom-btn {
-        top: 300px;
-        left: 250px;
-    }
-
-    .basketball-btn {
-        top: 200px;
-        left: 500px;
-    }
-
-    .auditorium-btn {
-        top: 300px;
-        left: 1000px;
-    }
-
-    .scilab-btn {
-        top: 400px;
-        left: 900px;
-    }
-
-    .classes-btn {
-        top: 500px;
-        left: 950px;
-    }
-
     .facilitydescriptions {
-        width: 1250px;
-        height: 1024px;
-        top: 100px;
-        left: 50%;
+        width: 87%;
+        max-width: 1420px;
+        max-height: 700px;
+        top: 120px;
+        left: -96px;
+        right: -96px;
+        transform: translate(0);
+        opacity: 0;
     }
 
     .closebutton {
@@ -286,7 +249,7 @@
     }
 
     .facilitytext {
-        padding-inline: 10px;
+        padding-inline: px;
 
         h1 {
             margin: 10px 0;
@@ -308,56 +271,14 @@
 
 @media (max-width: 1024px) {
 
-    // Laptop 
-    .facility-btn {
-        font-size: 24px;
-    }
-
-    .courtyard-btn {
-        top: 550px;
-        left: 300px;
-    }
-
-    .library-btn {
-        top: 500px;
-        left: 500px;
-    }
-
-    .comlab-btn {
-        top: 475px;
-        left: 150px;
-    }
-
-    .classroom-btn {
-        top: 300px;
-        left: 175px;
-    }
-
-    .basketball-btn {
-        top: 275px;
-        left: 400px;
-    }
-
-    .auditorium-btn {
-        top: 325px;
-        left: 700px;
-    }
-
-    .scilab-btn {
-        top: 400px;
-        left: 650px;
-    }
-
-    .classes-btn {
-        top: 470px;
-        left: 700px;
-    }
-
     .facilitydescriptions {
-        width: 835px;
-        height: 1024px;
-        top: 100px;
-        left: 50%;
+        width: 87%;
+        max-width: 1004px;
+        max-height: 700px;
+        top: 120px;
+        left: -96px;
+        right: -96px;
+        transform: translate(0);
     }
 
     .closebutton {
@@ -403,61 +324,14 @@
 
 @media (max-width: 768px) {
 
-    //Tablet 
-    .facility-btn {
-        font-size: 18px;
-        padding: 5px 10px;
-        border-radius: 2.5px;
-        box-shadow: 0 0 5px black;
-    }
-
-    .courtyard-btn {
-        top: 500px;
-        left: 200px;
-    }
-
-    .library-btn {
-        top: 450px;
-        left: 325px;
-    }
-
-    .comlab-btn {
-        top: 450px;
-        left: 100px;
-    }
-
-    .classroom-btn {
-        top: 350px;
-        left: 100px;
-    }
-
-    .basketball-btn {
-        top: 300px;
-        left: 275px;
-    }
-
-    .auditorium-btn {
-        top: 325px;
-        left: 500px;
-    }
-
-    .scilab-btn {
-        top: 400px;
-        left: 450px;
-    }
-
-    .classes-btn {
-        top: 475px;
-        left: 500px;
-    }
-
     .facilitydescriptions {
-        width: 640px;
-        height: 1024px;
-        top: 100px;
-        opacity: 0;
-        border-radius: 10px;
-        box-shadow: 7.5px 7.5px 15px black;
+        width: 87%;
+        max-width: 728px;
+        max-height: 800px;
+        top: 120px;
+        left: -96px;
+        right: -96px;
+        transform: translate(0);
     }
 
     .facilitydesc {
@@ -501,61 +375,21 @@
 }
 
 @media (max-width: 480px) {
+
     h1 {
         @include fontSize(h3);
     }
 
-    .facility-btn {
-        font-size: 12px;
-        padding: 5px 10px;
-        border-radius: 2.5px;
-        box-shadow: 0 0 5px black;
-    }
-
-    .courtyard-btn {
-        top: 500px;
-        left: 125px;
-    }
-
-    .library-btn {
-        top: 450px;
-        left: 225px;
-    }
-
-    .comlab-btn {
-        top: 450px;
-        left: 50px;
-    }
-
-    .classroom-btn {
-        top: 375px;
-        left: 75px;
-    }
-
-    .basketball-btn {
-        top: 325px;
-        left: 150px;
-    }
-
-    .auditorium-btn {
-        top: 375px;
-        left: 300px;
-    }
-
-    .scilab-btn {
-        top: 410px;
-        left: 250px;
-    }
-
-    .classes-btn {
-        top: 450px;
-        left: 325px;
-    }
-
     .facilitydescriptions {
-        width: 400px;
-        height: 100%;
+        width: 87%;
+        max-width: 480px;
+        max-height: 900px;
+        top: 120px;
+        left: -96px;
+        right: -96px;
+        transform: translate(0);
     }
+
 
     .facilitydesc {
         margin-top: -10px;
@@ -573,7 +407,7 @@
         right: 10px;
         width: 30px;
         height: 30px;
-        font-size:15px;
+        font-size: 15px;
         border-radius: 5px;
     }
 
