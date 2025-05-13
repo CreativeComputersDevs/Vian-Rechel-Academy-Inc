@@ -1145,7 +1145,16 @@ margin: 5px;
 }
 
 
-
+.history-timeline-img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.history h2 {
+  margin-bottom: 50px;
+}
 
 .section-ab {
   padding: 3rem 2rem;
