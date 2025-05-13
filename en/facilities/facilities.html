@@ -192,45 +192,96 @@
             <div class="schoolmap">
                 <img src="./images/school-layout-2.png" alt="">
                 <div class="facilitybuttons">
-                    <button class="courtyard">COURTYARD</button>
+                    <button class="facility-btn courtyard-btn" data-target="courtyarddesc">COURTYARD</button>
+                    <button class="facility-btn library-btn" data-target="librarydesc">LIBRARY</button>
+                    <button class="facility-btn classroom-btn" data-target="classroomdesc">CLASSROOM</button>
+                    <button class="facility-btn comlab-btn" data-target="comdesc">COMP. LAB</button>
+                    <button class="facility-btn basketball-btn" data-target="basketballdesc">BASKETBALL COURT</button>
+                    <button class="facility-btn auditorium-btn" data-target="auditoriumdesc">AUDITORIUM</button>
+                    <button class="facility-btn scilab-btn" data-target="scilabdesc">SCI. LAB</button>
+                    <button class="facility-btn classes-btn" data-target="classesdesc">CLASSROOMS</button>
                 </div>
             </div>
-            <div class="testcontainer">
-                <div class="facilitydescriptions">
-                    <button class="closebutton">
-                        X
-                    </button>
-                    <div class="courtyarddesc">
-                        <img src="./images/testimage.jpg" alt="">
-                        <div class="courtyardtext">
-                            <h1>Courtyard</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto, assumenda nisi
-                                eum
-                                incidunt corrupti natus! Ea repellendus cupiditate nemo sapiente numquam? Ipsam cumque
-                                voluptate cupiditate est delectus cum vel. Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Aperiam amet unde tenetur qui quas nemo, tempore delectus eveniet
-                                blanditiis numquam quis. Dolore minus excepturi dolorum at, velit eum iure error? 
-                                <br><br>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid est consequatur culpa optio
-                                fugit consequuntur, excepturi itaque facere cumque perspiciatis nostrum blanditiis,
-                                ratione,
-                                recusandae explicabo amet illo quos sed ullam?
-                                <br><br>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid est consequatur culpa optio
-                                fugit consequuntur, excepturi itaque facere cumque perspiciatis nostrum blanditiis,
-                                ratione,
-                                recusandae explicabo amet illo quos sed ullam?
-                                <br><br>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid est consequatur culpa optio
-                                fugit consequuntur, excepturi itaque facere cumque perspiciatis nostrum blanditiis,
-                                ratione,
-                                recusandae explicabo amet illo quos sed ullam?
-                                <br><br>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid est consequatur culpa optio
-                                fugit consequuntur, excepturi itaque facere cumque perspiciatis nostrum blanditiis,
-                                ratione,
-                                recusandae explicabo amet illo quos sed ullam?</p>
-                        </div>
+            <div class="facilitydescriptions">
+                <button class="closebutton">X</button>
+
+                <div class="facilitydesc courtyarddesc" id="courtyarddesc">
+                    <img src="./images/courtyard.jpg" alt="">
+                    <div class="facilitytext">
+                        <h1>Courtyard</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quibusdam blanditiis facere repellat labore modi. Ratione dicta nisi corporis. Nulla error quas est corrupti omnis recusandae accusantium. Officiis, tenetur quia.</p>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem hic laboriosam ipsa, alias distinctio libero, ullam, nihil iusto iste officia dolor veniam velit ducimus consectetur soluta ab magni temporibus harum.</p>
+                    </div>
+                </div>
+
+                <div class="facilitydesc librarydesc" id="librarydesc" style="display: none;">
+                    <img src="./images/library.jpg" alt="">
+                    <div class="facilitytext">
+                        <h1>Library</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quibusdam blanditiis facere repellat labore modi. Ratione dicta nisi corporis. Nulla error quas est corrupti omnis recusandae accusantium. Officiis, tenetur quia.</p>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem hic laboriosam ipsa, alias distinctio libero, ullam, nihil iusto iste officia dolor veniam velit ducimus consectetur soluta ab magni temporibus harum.</p>
+                    </div>
+                </div>
+
+                <div class="facilitydesc classroomdesc" id="classroomdesc" style="display: none;">
+                    <img src="./images/classroom.jpg" alt="">
+                    <div class="facilitytext">
+                        <h1>Classroom</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quibusdam blanditiis facere repellat labore modi. Ratione dicta nisi corporis. Nulla error quas est corrupti omnis recusandae accusantium. Officiis, tenetur quia.</p>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem hic laboriosam ipsa, alias distinctio libero, ullam, nihil iusto iste officia dolor veniam velit ducimus consectetur soluta ab magni temporibus harum.</p>
+                    </div>
+                </div>
+
+                <div class="facilitydesc comdesc" id="comdesc" style="display: none;">
+                    <img src="./images/complab.jpg" alt="">
+                    <div class="facilitytext">
+                        <h1>Computer Lab</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quibusdam blanditiis facere repellat labore modi. Ratione dicta nisi corporis. Nulla error quas est corrupti omnis recusandae accusantium. Officiis, tenetur quia.</p>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem hic laboriosam ipsa, alias distinctio libero, ullam, nihil iusto iste officia dolor veniam velit ducimus consectetur soluta ab magni temporibus harum.</p>
+                    </div>
+                </div>
+
+                <div class="facilitydesc basketballdesc" id="basketballdesc" style="display: none;">
+                    <img src="./images/bball.jpg" alt="">
+                    <div class="facilitytext">
+                        <h1>Basketball Court</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quibusdam blanditiis facere repellat labore modi. Ratione dicta nisi corporis. Nulla error quas est corrupti omnis recusandae accusantium. Officiis, tenetur quia.</p>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem hic laboriosam ipsa, alias distinctio libero, ullam, nihil iusto iste officia dolor veniam velit ducimus consectetur soluta ab magni temporibus harum.</p>
+                    </div>
+                </div>
+
+                <div class="facilitydesc auditoriumdesc" id="auditoriumdesc" style="display: none;">
+                    <img src="./images/auditorium.jpg" alt="">
+                    <div class="facilitytext">
+                        <h1>Auditorium</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quibusdam blanditiis facere repellat labore modi. Ratione dicta nisi corporis. Nulla error quas est corrupti omnis recusandae accusantium. Officiis, tenetur quia.</p>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem hic laboriosam ipsa, alias distinctio libero, ullam, nihil iusto iste officia dolor veniam velit ducimus consectetur soluta ab magni temporibus harum.</p>
+                    </div>
+                </div>
+
+                <div class="facilitydesc scilab" id="scilabdesc" style="display: none;">
+                    <img src="./images/scilab.jpg" alt="">
+                    <div class="facilitytext">
+                        <h1>Science Lab</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quibusdam blanditiis facere repellat labore modi. Ratione dicta nisi corporis. Nulla error quas est corrupti omnis recusandae accusantium. Officiis, tenetur quia.</p>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem hic laboriosam ipsa, alias distinctio libero, ullam, nihil iusto iste officia dolor veniam velit ducimus consectetur soluta ab magni temporibus harum.</p>
+                    </div>
+                </div>
+
+                <div class="facilitydesc classesdesc" id="classesdesc" style="display: none;">
+                    <img src="./images/classroom.jpg" alt="">
+                    <div class="facilitytext">
+                        <h1>Classrooms</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam quibusdam blanditiis facere repellat labore modi. Ratione dicta nisi corporis. Nulla error quas est corrupti omnis recusandae accusantium. Officiis, tenetur quia.</p>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem hic laboriosam ipsa, alias distinctio libero, ullam, nihil iusto iste officia dolor veniam velit ducimus consectetur soluta ab magni temporibus harum.</p>
                     </div>
                 </div>
             </div>
@@ -386,13 +437,27 @@
     </footer>
 </body>
 <script>
-    const courtyardButton = document.querySelector('.courtyard');
+    const facilityButtons = document.querySelectorAll('.facilitybuttons button');
     const popup = document.querySelector('.facilitydescriptions');
     const closeButton = document.querySelector('.closebutton');
+    const allDescriptions = document.querySelectorAll('.facilitydesc');
 
-    courtyardButton.addEventListener('click', () => {
-        popup.classList.remove('closing');
-        popup.classList.add('active');
+    facilityButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const targetId = button.getAttribute('data-target');
+
+            allDescriptions.forEach(desc => {
+                desc.style.display = 'none';
+            });
+
+            const targetDesc = document.getElementById(targetId);
+            if (targetDesc) {
+                targetDesc.style.display = 'block';
+            }
+
+            popup.classList.remove('closing');
+            popup.classList.add('active');
+        });
     });
 
     closeButton.addEventListener('click', () => {
@@ -401,8 +466,12 @@
 
         setTimeout(() => {
             popup.classList.remove('closing');
+            allDescriptions.forEach(desc => {
+                desc.style.display = 'none';
+            });
         }, 400);
     });
+
 </script>
 
 
