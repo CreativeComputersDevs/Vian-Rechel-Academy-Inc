@@ -111,14 +111,16 @@ $('.blog-slider').slick({
 
 
 $('.event-slider').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	dots: false,
-	arrows: false,
-	autoplay: true,
-	autoplaySpeed: 4000,
-	infinite: true
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 500, // ← change to 500ms
+    speed: 300, // ← animation transition speed in ms
+    infinite: true
 });
+
 
 
 // Tab switching logic
