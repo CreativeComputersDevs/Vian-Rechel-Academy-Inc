@@ -116,8 +116,8 @@ $('.event-slider').slick({
     dots: false,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 500, // ← change to 500ms
-    speed: 300, // ← animation transition speed in ms
+    autoplaySpeed: 2000, // ← change to 500ms
+    speed: 1000, // ← animation transition speed in ms
     infinite: true
 });
 
