@@ -135,7 +135,6 @@
       text-align: center;
       text-transform: uppercase;
       margin: 0 0 $spacing-16 0;
-      line-height: 1;
 
       @include tablet() {
         @include fontSize(h2);
@@ -629,7 +628,6 @@
         text-transform: uppercase;
         text-wrap: balance;
         margin: 0 0 $spacing-16 0;
-        line-height: 1;
 
         @include tablet() {
           @include fontSize(h2);
