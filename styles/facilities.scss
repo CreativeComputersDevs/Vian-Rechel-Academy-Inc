@@ -13,16 +13,20 @@
     background-color: black;
     height: 100vh;
     max-width: 100%;
-    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     h1 {
         font-weight: bolder;
-        padding-top: 430px;
         text-align: center;
-        @include fontSize(h1);
+        font-size: 128px;
         color: #f2c523;
+        margin: 0;
     }
 }
+
 
 .facilities {
     overflow-y: hidden;
@@ -271,6 +275,12 @@
 
 @media (max-width: 1024px) {
 
+    .facilitiesheader {
+        h1 {
+            font-size: 96px;
+        }
+    }
+
     .facilitydescriptions {
         width: 87%;
         max-width: 1004px;
@@ -376,8 +386,10 @@
 
 @media (max-width: 480px) {
 
-    h1 {
-        @include fontSize(h3);
+    .facilitiesheader {
+        h1 {
+            font-size: 48px;
+        }
     }
 
     .facilitydescriptions {
