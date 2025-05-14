@@ -1,0 +1,206 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+@include primaryButton();
+@include widthWrap();
+
+$yellow: #F2C523;
+$green: #12533F;
+$red: #700005;
+$header-bg: #f2f2f2;
+
+* {
+    transition: all 0.2s ease;
+}
+
+.admissionsheader {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    max-width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-weight: bolder;
+        text-align: center;
+        font-size: 128px;
+        color: #f2c523;
+        margin: 0;
+    }
+}
+
+.tuition-title {
+    margin: 4rem auto;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.tuition-box {
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 90%;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin: -1rem -1rem 0 -1rem;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        font-size: 2rem;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+
+        thead {
+            background: $header-bg;
+            font-weight: bold;
+        }
+
+        th {
+            border: none;
+            padding: 0.75rem;
+            text-align: left;
+            font-size: 1.5rem;
+        }
+
+        td {
+            border: none;
+            padding: 0.75rem;
+            text-align: left;
+            font-size: 1.2rem;
+        }
+    }
+
+    &.pre-elem {
+        border: 2px solid $yellow;
+
+        h2 {
+            color: black;
+            background-color: $yellow;
+        }
+    }
+
+    &.elementary {
+        border: 2px solid $green;
+
+        h2 {
+            background-color: $green;
+        }
+    }
+
+    &.secondary {
+        border: 2px solid $red;
+
+        h2 {
+            background-color: $red;
+        }
+    }
+}
+
+.paymentoptions {
+    height: 100%;
+    max-width: 680px;
+    margin: 5% auto;
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        color: $red;
+    }
+
+    p {
+        font-size: 1.75rem;
+        font-weight: normal;
+        margin: 1rem 0;
+    }
+
+    .options {
+        margin: 2rem 0;
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        ol {
+            margin-left: 1.25rem;
+            list-style: square;
+            font-size: 1.25rem;
+        }
+
+        li {
+            margin: 1rem 0;
+        }
+    }
+}
+
+.admissionsschedule {
+    height: 100%;
+    max-width: 680px;
+    margin: 5% auto;
+
+    h1 {
+        font-size: 3rem;
+        margin: 1rem auto;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+    }
+}
+
+.admlist {
+    margin: 0 auto;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 0;
+        margin: 2rem auto;
+    }
+
+    li {
+        margin: 0.5rem 0;
+        margin-left: 1rem;
+        flex: 1 1 45%;
+        list-style: square;
+    }
+
+    @media (max-width: 768px) {
+        ul {
+            flex-direction: column;
+        }
+
+        li {
+            flex: 1 1 100%;
+        }
+    }
+}
+
+#clarifications {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+#contact {
+    color: $red;
+    font-weight: bold;
+    text-decoration: underline;
+}

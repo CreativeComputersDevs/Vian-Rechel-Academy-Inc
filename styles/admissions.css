@@ -1,0 +1,233 @@
+.btn-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  border-radius: 0.5rem;
+}
+.btn-style.yellow {
+  background-color: #f2c523;
+  color: #1a1a1a;
+  fill: #1a1a1a;
+}
+.btn-style.green {
+  background-color: #12533f;
+  color: #fbf8f2;
+  fill: #fbf8f2;
+}
+.btn-style.white {
+  background-color: #fbf8f2;
+  color: #1a1a1a;
+  fill: #1a1a1a;
+}
+.btn-style.red {
+  background-color: #700005;
+  color: #fbf8f2;
+  fill: #fbf8f2;
+}
+.btn-style:hover .btn-box-ctr .btn-box {
+  transform: rotateZ(180deg) scale(0.5);
+}
+.btn-style .btn-box-ctr {
+  width: 1rem;
+  height: 1rem;
+  display: grid;
+  place-items: center;
+}
+.btn-style .btn-box-ctr .btn-box {
+  width: inherit;
+  height: inherit;
+  border-radius: 0.125rem;
+  transition: transform 0.8s cubic-bezier(0.47, 1.64, 0.41, 0.8);
+}
+
+.width-wrap {
+  margin: 0 auto;
+  max-width: 1720px;
+  padding: 2.5rem 1.5rem;
+}
+@media (min-width: 768px) {
+  .width-wrap {
+    padding: 5rem 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .width-wrap {
+    padding: 7.5rem 6rem;
+  }
+}
+
+* {
+  transition: all 0.2s ease;
+}
+
+.admissionsheader {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.admissionsheader h1 {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 128px;
+  color: #f2c523;
+  margin: 0;
+}
+
+.tuition-title {
+  margin: 4rem auto;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.tuition-box {
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 90%;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.tuition-box h2 {
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin: -1rem -1rem 0 -1rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  font-size: 2rem;
+}
+.tuition-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.tuition-box table thead {
+  background: #f2f2f2;
+  font-weight: bold;
+}
+.tuition-box table th {
+  border: none;
+  padding: 0.75rem;
+  text-align: left;
+  font-size: 1.5rem;
+}
+.tuition-box table td {
+  border: none;
+  padding: 0.75rem;
+  text-align: left;
+  font-size: 1.2rem;
+}
+.tuition-box.pre-elem {
+  border: 2px solid #F2C523;
+}
+.tuition-box.pre-elem h2 {
+  color: black;
+  background-color: #F2C523;
+}
+.tuition-box.elementary {
+  border: 2px solid #12533F;
+}
+.tuition-box.elementary h2 {
+  background-color: #12533F;
+}
+.tuition-box.secondary {
+  border: 2px solid #700005;
+}
+.tuition-box.secondary h2 {
+  background-color: #700005;
+}
+
+.paymentoptions {
+  height: 100%;
+  max-width: 680px;
+  margin: 5% auto;
+}
+.paymentoptions h1 {
+  font-size: 3rem;
+}
+.paymentoptions h2 {
+  font-size: 1.5rem;
+  color: #700005;
+}
+.paymentoptions p {
+  font-size: 1.75rem;
+  font-weight: normal;
+  margin: 1rem 0;
+}
+.paymentoptions .options {
+  margin: 2rem 0;
+}
+.paymentoptions .options h3 {
+  font-size: 2rem;
+}
+.paymentoptions .options ol {
+  margin-left: 1.25rem;
+  list-style: square;
+  font-size: 1.25rem;
+}
+.paymentoptions .options li {
+  margin: 1rem 0;
+}
+
+.admissionsschedule {
+  height: 100%;
+  max-width: 680px;
+  margin: 5% auto;
+}
+.admissionsschedule h1 {
+  font-size: 3rem;
+  margin: 1rem auto;
+}
+.admissionsschedule h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.admlist {
+  margin: 0 auto;
+}
+.admlist ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  margin: 2rem auto;
+}
+.admlist li {
+  margin: 0.5rem 0;
+  margin-left: 1rem;
+  flex: 1 1 45%;
+  list-style: square;
+}
+@media (max-width: 768px) {
+  .admlist ul {
+    flex-direction: column;
+  }
+  .admlist li {
+    flex: 1 1 100%;
+  }
+}
+
+#clarifications {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+#contact {
+  color: #700005;
+  font-weight: bold;
+  text-decoration: underline;
+}/*# sourceMappingURL=admissions.css.map */

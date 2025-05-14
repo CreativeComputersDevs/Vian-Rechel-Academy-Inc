@@ -80,7 +80,7 @@
   text-transform: uppercase;
   color: #fbf8f2;
   font-size: 3rem;
-  line-height: 1.25;
+  line-height: 1;
   font-weight: 900;
 }
 @media (min-width: 768px) {
@@ -192,16 +192,15 @@
 }
 .intro .width-wrap h2 {
   font-size: 2.5rem;
-  line-height: 1.3;
+  line-height: 1;
   text-align: center;
   text-transform: uppercase;
   margin: 0 0 1rem 0;
-  line-height: 1;
 }
 @media (min-width: 768px) {
   .intro .width-wrap h2 {
     font-size: 3.5rem;
-    line-height: 1.2;
+    line-height: 1.1;
   }
 }
 @media (min-width: 1024px) {
@@ -257,7 +256,7 @@
   .courses .width-wrap h2 {
     margin: 0 0 2rem 0;
     font-size: 3.5rem;
-    line-height: 1.2;
+    line-height: 1.1;
   }
 }
 @media (min-width: 1024px) {
@@ -415,7 +414,7 @@
 @media (min-width: 768px) {
   .homeschool .width-wrap .hs-desc h2 {
     font-size: 3.5rem;
-    line-height: 1.2;
+    line-height: 1.1;
     margin: 0 0 1.5rem 0;
   }
 }
@@ -428,7 +427,7 @@
 @media (min-width: 1024px) {
   .homeschool .width-wrap .hs-desc p {
     font-size: 3rem;
-    line-height: 1.25;
+    line-height: 1;
   }
 }
 @media (min-width: 1024px) {
@@ -471,7 +470,7 @@
 @media (min-width: 1024px) {
   .homeschool .width-wrap .hs-features .hs-list li p {
     font-size: 2.5rem;
-    line-height: 1.3;
+    line-height: 1;
   }
 }
 @media (min-width: 768px) {
@@ -519,13 +518,13 @@
   .testimonials .width-wrap h2 {
     margin: 0 0 4rem 0;
     font-size: 3rem;
-    line-height: 1.25;
+    line-height: 1;
   }
 }
 @media (min-width: 1024px) {
   .testimonials .width-wrap h2 {
     font-size: 3.5rem;
-    line-height: 1.2;
+    line-height: 1.1;
   }
 }
 .testimonials .width-wrap .test-info {
@@ -596,7 +595,7 @@
 @media (min-width: 1024px) {
   .testimonials .width-wrap .indi-desc p {
     font-size: 3rem;
-    line-height: 1.25;
+    line-height: 1;
     max-width: 1360px;
     margin: 0 0 3rem 0;
   }
@@ -631,13 +630,13 @@
 @media (min-width: 768px) {
   .testimonials .width-wrap .indi-desc .indi-details cite {
     font-size: 2.5rem;
-    line-height: 1.3;
+    line-height: 1;
   }
 }
 @media (min-width: 1024px) {
   .testimonials .width-wrap .indi-desc .indi-details cite {
     font-size: 3rem;
-    line-height: 1.25;
+    line-height: 1;
   }
 }
 .testimonials .width-wrap .indi-desc .indi-details h3 {
@@ -736,17 +735,16 @@
 }
 .apply .width-wrap .apply-desc h2 {
   font-size: 2.5rem;
-  line-height: 1.3;
+  line-height: 1;
   text-align: center;
   text-transform: uppercase;
   text-wrap: balance;
   margin: 0 0 1rem 0;
-  line-height: 1;
 }
 @media (min-width: 768px) {
   .apply .width-wrap .apply-desc h2 {
     font-size: 3.5rem;
-    line-height: 1.2;
+    line-height: 1.1;
   }
 }
 @media (min-width: 1024px) {

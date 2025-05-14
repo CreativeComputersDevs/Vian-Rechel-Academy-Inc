@@ -46,7 +46,7 @@
   text-transform: uppercase;
   color: #fbf8f2;
   font-size: 3rem;
-  line-height: 1.25;
+  line-height: 1;
   font-weight: 900;
 }
 @media (min-width: 768px) {
