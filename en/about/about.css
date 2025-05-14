@@ -217,19 +217,8 @@ footer .logo figcaption strong{
   margin-bottom:3px;
 }
 
-footer a{
-  color:var(--lite);
-  display:block;
-  margin:10px 0;
-}
 
-footer a:hover{
-  color:var(--white);
-}
 
-footer fieldset{
-  padding:0;
-}
 
 footer fieldset input{
   background-color:#334f6c;
