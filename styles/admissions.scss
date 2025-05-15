@@ -14,37 +14,53 @@ $header-bg: #f2f2f2;
 }
 
 .admissionsheader {
+    overflow-y: hidden;
     position: relative;
-    background-color: black;
+    background: url("../en/admissions/images/admbanner.png") no-repeat center center;
+    background-size: cover;
     height: 100vh;
-    max-width: 100%;
+    width: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
-    h1 {
-        font-weight: bolder;
-        text-align: center;
-        font-size: 128px;
-        color: #f2c523;
-        margin: 0;
-    }
 }
 
-.tuition-title {
-    margin: 4rem auto;
+.admissionsheader::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75); 
+    z-index: 1;
+}
+
+.admissionsheader h1 {
+    position: relative;
+    z-index: 2;
+    font-weight: bolder;
     text-align: center;
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    font-size: 128px;
+    color: #f2c523;
+    margin: 0;
+}
+
+.tuitionfees {
+    h1 {
+        margin: 4rem auto;
+        text-align: center;
+        margin-bottom: 3.25%;
+        font-size: 3rem;
+    }
 }
 
 .tuition-box {
     border-radius: 1rem;
     padding: 1rem;
     margin-bottom: 2rem;
-    width: 90%;
-    max-width: 680px;
+    width: 680px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -60,6 +76,7 @@ $header-bg: #f2f2f2;
     }
 
     table {
+        overflow-y: hidden;
         width: 100%;
         border-collapse: collapse;
         margin-top: 1rem;
@@ -70,6 +87,7 @@ $header-bg: #f2f2f2;
         }
 
         th {
+            overflow-y: hidden;
             border: none;
             padding: 0.75rem;
             text-align: left;
@@ -77,6 +95,7 @@ $header-bg: #f2f2f2;
         }
 
         td {
+            overflow-y: hidden;
             border: none;
             padding: 0.75rem;
             text-align: left;
@@ -113,7 +132,7 @@ $header-bg: #f2f2f2;
 .paymentoptions {
     height: 100%;
     max-width: 680px;
-    margin: 5% auto;
+    margin: 7.5% auto;
 
     h1 {
         font-size: 3rem;
@@ -152,7 +171,7 @@ $header-bg: #f2f2f2;
 .admissionsschedule {
     height: 100%;
     max-width: 680px;
-    margin: 5% auto;
+    margin: 7.5% auto;
 
     h1 {
         font-size: 3rem;
@@ -182,16 +201,6 @@ $header-bg: #f2f2f2;
         flex: 1 1 45%;
         list-style: square;
     }
-
-    @media (max-width: 768px) {
-        ul {
-            flex-direction: column;
-        }
-
-        li {
-            flex: 1 1 100%;
-        }
-    }
 }
 
 #clarifications {
@@ -199,8 +208,61 @@ $header-bg: #f2f2f2;
     font-weight: normal;
 }
 
-#contact {
+#contact,
+#contact a {
+    display: inline;
     color: $red;
     font-weight: bold;
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .admissionsheader {
+        h1 {
+            font-size: 96px;
+        }
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    li {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .admissionsheader {
+        h1 {
+            font-size: 64px;
+        }
+    }
+
+    .tuitionfees {
+        h1 {
+            margin: 2rem;
+            text-align: left;
+            font-size: 3rem;
+        }
+    }
+
+    .tuitioncont {
+        overflow-y: hidden;
+        margin: auto 2rem;
+    }
+
+    .paymentoptions {
+        margin: 7.5% 2rem;
+    }
+
+    .admissionsschedule {
+        margin: 7.5% 2rem;
+    }
+
+    .admissionsheader h1 {
+        font-size: 64px;
+    }
+
 }
