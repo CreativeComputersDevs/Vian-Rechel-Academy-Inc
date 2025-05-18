@@ -220,45 +220,8 @@ footer .logo figcaption strong{
 
 
 
-footer fieldset input{
-  background-color:#334f6c;
-  border:0;
-  color:var(--lite);
-  padding:1rem;
-}
 
-footer fieldset .btn{
-  border-radius:0;
-  border:0;
-}
 
-footer fieldset .btn_2{
-  background-color:var(--primary_lite);
-  }
-
-footer fieldset .btn_2:hover{
-  background-color:var(--primary_lite);
-  border:0;
-  color:var(--primary);
-}
-
-footer .flex_content:nth-child(2) a:before, footer .flex_content:nth-child(3) a:before{
-  content:"\f0da";
-  font-family:"FontAwesome";
-  margin-right:10px;
-}
-
-footer .flex_content:nth-child(2) a:hover, footer .flex_content:nth-child(3) a:hover{
-  margin-left:5px;
-}
-
-footer .flex:last-child{
-  align-items:center;
-}
-
-footer .flex:last-child .flex-content:last-child{
-  text-align:right;
-}
 
 
 footer .flex:last-child a{
@@ -291,7 +254,6 @@ footer .flex:last-child a:hover{
 
 .top_footer figure{
   position:absolute;
-  bottom:10%;
   left:50%;
   transform:translate(-50%, 0);
   overflow:hidden;
