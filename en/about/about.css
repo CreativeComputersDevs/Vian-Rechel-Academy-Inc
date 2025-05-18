@@ -394,6 +394,7 @@ footer .flex:last-child a:hover{
 
 .division_2 .flex_content:first-child p{
   color:var(--gray);
+  margin-bottom: 20px;
 }
 
 .division_2 #notification a{
@@ -422,7 +423,7 @@ footer .flex:last-child a:hover{
 }
 
 .division_2 #notification figure{
-  width:35%;
+  width:15%;
   height:100%;
   overflow:hidden;
   margin-right:20px;
@@ -430,7 +431,7 @@ footer .flex:last-child a:hover{
 
 .division_2 #notification figure img, .division_2 #event figure img{
   width:100%;
-  height:100%;
+  height:50%;
   object-fit:cover;
 }
 
@@ -733,6 +734,7 @@ margin: 5px;
 /*division_4*/
 .division_4{
   z-index:11;
+  margin-top: 150px;
 }
 
 .division_4 .title_header{
@@ -1151,6 +1153,13 @@ margin: 5px;
   margin: auto;
 }
 
+.section-red {
+  background-color: #700005;
+}
+
+.section-red h2 {
+  color: white;
+}
   /* School Image */
   .school-img {
     max-width: 100%;
@@ -1285,7 +1294,7 @@ margin: 5px;
   
   .offer-card {
     background-color: white;
-    border-left: 4px solid #700005;
+    border-left: 4px solid #F2C523;
     padding: 1rem 1.5rem;
     border-radius: 8px;
     font-weight: 500;
