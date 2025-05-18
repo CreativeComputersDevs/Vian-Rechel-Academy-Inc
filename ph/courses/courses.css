@@ -1,0 +1,251 @@
+
+
+  
+  .classroom-section {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 1450px;
+    margin: 0 auto;
+  }
+  
+  .classroom-card {
+    background-color: rgb(112, 0, 5); /* Red background */
+    border-radius: 8px;
+    overflow: hidden;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 25px; /* Padding to create space around the image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .classroom-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .classroom-image {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+  }
+  
+  
+  .classroom-content {
+    padding: 20px;
+  }
+  
+  .classroom-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .classroom-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .classroom-content h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .classroom-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .classroom-content ul li {
+    margin-bottom: 8px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .classroom-section {
+      padding: 10px;
+    }
+  
+    .classroom-content h2 {
+      font-size: 20px;
+    }
+  
+    .classroom-content h3 {
+      font-size: 16px;
+    }
+  }
+  
+  .hero {
+    position: relative;
+    overflow: hidden;
+  }
+
+ .hero-img {
+  z-index: 0;
+  height: 125%;
+  width: 100vw;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.5);
+  pointer-events: none;
+}
+
+
+.width-wrap h1 {
+  z-index: 10;
+}
+
+.hero .width-wrap h1 span {
+  color: white;
+
+}
+
+
+/* FAQ Container */
+.faq-container {
+  max-width: 1250px;
+  padding: 20px;
+  position: relative;
+  z-index: 0;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  background-color: #12533F;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item:first-child {
+  border-top-left-radius: 25px;
+}
+
+.faq-question {
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: font-size 0.3s ease, color 0.3s ease; 
+}
+
+.faq-text {
+  font-size: 1rem; 
+  color: #333; 
+  transition: font-size 0.3s ease, color 0.3s ease; 
+}
+
+.faq-answer.visible .faq-text {
+  font-size: 2rem; 
+  color: #12533F; 
+  text-justify: auto;
+}
+
+.faq-number {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-right: 10px;
+  transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.faq-answer {
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 15px;
+  font-size: 1rem;
+  color: #ffffff;
+  transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+}
+
+.faq-answer.visible {
+  max-height: 1000px;
+  padding: 40px 60px;
+}
+
+
+button.toggle {
+  font-size: 3.25rem;
+  background: none;
+  border: none;
+  color: #4a4a4a;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+button.toggle.active {
+  transform: rotate(45deg);
+}
+
+/* Tablet Responsiveness... */
+@media (max-width: 769px) {
+  .faq-title-container {
+    margin: 0;
+    border-radius: 0; 
+    max-width: 100%; 
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .faq-title h1 {
+    font-size: 8vw;
+  }
+
+  .faq-title {
+    padding: 15vw 6vw;
+  }
+
+
+}
+
+/* Mobile Responsiveness (Large & Small)... */
+@media (max-width: 426px) {
+  .faq-title {
+    padding: 20vw 8vw;
+  }
+  
+  faq-title h1 {
+    font-size: 10vw;
+  }
+
+  .faq-container {
+    margin: -5px auto 0; 
+  }
+
+  .faq-text {
+    font-size: 1rem; 
+  }
+  
+  .faq-answer.visible .faq-text {
+    font-size: 1rem; 
+    text-justify: auto;
+  }
+  
+  .faq-number {
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+
+  button.toggle {
+    font-size: 2rem;
+  }
+  
+  .faq-answer {
+    font-size: 12px;
+    margin: 0;
+  }
+  
+  .faq-answer.visible {
+    max-height: 200px;
+    padding: 40px 20px;
+  }
+}
+
+
