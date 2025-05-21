@@ -1266,6 +1266,12 @@ margin: 5px;
     font-size: 1rem;
   }
   
+  .offer-card  a{
+    color: #000;
+        font-weight: 500;
+
+  }
+
 /* ======================= */
 /* RESPONSIVE ADJUSTMENTS */
 /* ======================= */
