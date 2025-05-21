@@ -524,6 +524,10 @@ footer .flex:last-child a:hover{
   line-height:1;
 }
 
+.title_header h4 {
+
+  font-weight: 300;
+}
 .card li {
   -webkit-user-select: none;
   -moz-user-select: none;
