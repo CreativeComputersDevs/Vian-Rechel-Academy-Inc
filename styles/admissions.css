@@ -155,10 +155,10 @@
   color: black;
   background-color: #F2C523;
 }
-.tuition-box.elementary {
+.tuition-box.tuition-box_grade-1-2 {
   border: 2px solid #12533F;
 }
-.tuition-box.elementary h2 {
+.tuition-box.tuition-box_grade-1-2 h2 {
   background-color: #12533F;
 }
 .tuition-box.secondary {
